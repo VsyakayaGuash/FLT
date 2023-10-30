@@ -1,0 +1,570 @@
+Simulator report for ArchFLT
+Thu Sep 07 14:13:32 2023
+Quartus II 64-Bit Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 8.0 ms       ;
+; Simulation Netlist Size     ; 117 nodes    ;
+; Simulation Coverage         ;      63.25 % ;
+; Total Number of Transitions ; 2698         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Stratix II   ;
+; Device                      ; EP2S15F484C3 ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Timing     ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      63.25 % ;
+; Total nodes checked                                 ; 117          ;
+; Total output ports checked                          ; 117          ;
+; Total output ports with complete 1/0-value coverage ; 74           ;
+; Total output ports with no 1/0-value coverage       ; 35           ;
+; Total output ports with no 1-value coverage         ; 37           ;
+; Total output ports with no 0-value coverage         ; 41           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                              ;
++---------------------------------------------------+---------------------------------------------------+------------------+
+; Node Name                                         ; Output Port Name                                  ; Output Port Type ;
++---------------------------------------------------+---------------------------------------------------+------------------+
+; |ArchFLT|Transmitter:inst4|bas_data_TX~4          ; |ArchFLT|Transmitter:inst4|bas_data_TX~4          ; combout          ;
+; |ArchFLT|PK_Block:inst12|PowerOutB3_2             ; |ArchFLT|PK_Block:inst12|PowerOutB3_2             ; regout           ;
+; |ArchFLT|PK_Block:inst12|PowerOutB4_2             ; |ArchFLT|PK_Block:inst12|PowerOutB4_2             ; regout           ;
+; |ArchFLT|PK_Block:inst12|PowerOutC4_2             ; |ArchFLT|PK_Block:inst12|PowerOutC4_2             ; regout           ;
+; |ArchFLT|PK_Block:inst12|PowerOutD5_2             ; |ArchFLT|PK_Block:inst12|PowerOutD5_2             ; regout           ;
+; |ArchFLT|Transmitter:inst4|bas_data_TX            ; |ArchFLT|Transmitter:inst4|bas_data_TX            ; regout           ;
+; |ArchFLT|Receiver:inst1|bas_words[8]              ; |ArchFLT|Receiver:inst1|bas_words[8]              ; regout           ;
+; |ArchFLT|Receiver:inst1|bas_words[15]             ; |ArchFLT|Receiver:inst1|bas_words[15]             ; regout           ;
+; |ArchFLT|Receiver:inst1|bas_words[9]              ; |ArchFLT|Receiver:inst1|bas_words[9]              ; regout           ;
+; |ArchFLT|Receiver:inst1|bas_words[10]             ; |ArchFLT|Receiver:inst1|bas_words[10]             ; regout           ;
+; |ArchFLT|Receiver:inst1|bas_words[12]             ; |ArchFLT|Receiver:inst1|bas_words[12]             ; regout           ;
+; |ArchFLT|Receiver:inst1|bas_words[13]             ; |ArchFLT|Receiver:inst1|bas_words[13]             ; regout           ;
+; |ArchFLT|Receiver:inst1|bas_words[14]             ; |ArchFLT|Receiver:inst1|bas_words[14]             ; regout           ;
+; |ArchFLT|Receiver:inst1|bas_words[6]              ; |ArchFLT|Receiver:inst1|bas_words[6]              ; regout           ;
+; |ArchFLT|Transmitter:inst4|bas_signal[1]          ; |ArchFLT|Transmitter:inst4|bas_signal[1]          ; regout           ;
+; |ArchFLT|Transmitter:inst4|bas_signal[0]          ; |ArchFLT|Transmitter:inst4|bas_signal[0]          ; regout           ;
+; |ArchFLT|Transmitter:inst4|bas_signal[2]          ; |ArchFLT|Transmitter:inst4|bas_signal[2]          ; regout           ;
+; |ArchFLT|Transmitter:inst4|bas_signal[3]          ; |ArchFLT|Transmitter:inst4|bas_signal[3]          ; regout           ;
+; |ArchFLT|Transmitter:inst4|bas_data_TX~0          ; |ArchFLT|Transmitter:inst4|bas_data_TX~0          ; combout          ;
+; |ArchFLT|Receiver:inst1|bas_signal[3]             ; |ArchFLT|Receiver:inst1|bas_signal[3]             ; regout           ;
+; |ArchFLT|Receiver:inst1|bas_signal[2]             ; |ArchFLT|Receiver:inst1|bas_signal[2]             ; regout           ;
+; |ArchFLT|Receiver:inst1|bas_signal[1]             ; |ArchFLT|Receiver:inst1|bas_signal[1]             ; regout           ;
+; |ArchFLT|Receiver:inst1|bas_signal[0]             ; |ArchFLT|Receiver:inst1|bas_signal[0]             ; regout           ;
+; |ArchFLT|Receiver:inst1|bas_words[4]~65           ; |ArchFLT|Receiver:inst1|bas_words[4]~65           ; combout          ;
+; |ArchFLT|Receiver:inst1|bas_words[8]~66           ; |ArchFLT|Receiver:inst1|bas_words[8]~66           ; combout          ;
+; |ArchFLT|Receiver:inst1|bas_words[3]~67           ; |ArchFLT|Receiver:inst1|bas_words[3]~67           ; combout          ;
+; |ArchFLT|Receiver:inst1|bas_words[11]~68          ; |ArchFLT|Receiver:inst1|bas_words[11]~68          ; combout          ;
+; |ArchFLT|Receiver:inst1|bas_words[15]~69          ; |ArchFLT|Receiver:inst1|bas_words[15]~69          ; combout          ;
+; |ArchFLT|Receiver:inst1|bas_words[1]~70           ; |ArchFLT|Receiver:inst1|bas_words[1]~70           ; combout          ;
+; |ArchFLT|Receiver:inst1|bas_words[9]~71           ; |ArchFLT|Receiver:inst1|bas_words[9]~71           ; combout          ;
+; |ArchFLT|Receiver:inst1|bas_words[10]~72          ; |ArchFLT|Receiver:inst1|bas_words[10]~72          ; combout          ;
+; |ArchFLT|Receiver:inst1|bas_words[10]~73          ; |ArchFLT|Receiver:inst1|bas_words[10]~73          ; combout          ;
+; |ArchFLT|Receiver:inst1|bas_words[12]~74          ; |ArchFLT|Receiver:inst1|bas_words[12]~74          ; combout          ;
+; |ArchFLT|Receiver:inst1|bas_words[13]~75          ; |ArchFLT|Receiver:inst1|bas_words[13]~75          ; combout          ;
+; |ArchFLT|Receiver:inst1|bas_words[14]~76          ; |ArchFLT|Receiver:inst1|bas_words[14]~76          ; combout          ;
+; |ArchFLT|Receiver:inst1|bas_words[4]~77           ; |ArchFLT|Receiver:inst1|bas_words[4]~77           ; combout          ;
+; |ArchFLT|Receiver:inst1|bas_words[6]~78           ; |ArchFLT|Receiver:inst1|bas_words[6]~78           ; combout          ;
+; |ArchFLT|Receiver:inst1|bas_words[0]~79           ; |ArchFLT|Receiver:inst1|bas_words[0]~79           ; combout          ;
+; |ArchFLT|Receiver:inst1|bas_words[4]~80           ; |ArchFLT|Receiver:inst1|bas_words[4]~80           ; combout          ;
+; |ArchFLT|Receiver:inst1|bas_words[3]~81           ; |ArchFLT|Receiver:inst1|bas_words[3]~81           ; combout          ;
+; |ArchFLT|Receiver:inst1|bas_words[1]~82           ; |ArchFLT|Receiver:inst1|bas_words[1]~82           ; combout          ;
+; |ArchFLT|Receiver:inst1|bas_words[7]~83           ; |ArchFLT|Receiver:inst1|bas_words[7]~83           ; combout          ;
+; |ArchFLT|Transmitter:inst4|bas_signal[1]~0        ; |ArchFLT|Transmitter:inst4|bas_signal[1]~0        ; combout          ;
+; |ArchFLT|Transmitter:inst4|bas_signal[2]~1        ; |ArchFLT|Transmitter:inst4|bas_signal[2]~1        ; combout          ;
+; |ArchFLT|Transmitter:inst4|bas_signal[3]~2        ; |ArchFLT|Transmitter:inst4|bas_signal[3]~2        ; combout          ;
+; |ArchFLT|Receiver:inst1|bas_signal[3]~0           ; |ArchFLT|Receiver:inst1|bas_signal[3]~0           ; combout          ;
+; |ArchFLT|Receiver:inst1|bas_signal[2]~1           ; |ArchFLT|Receiver:inst1|bas_signal[2]~1           ; combout          ;
+; |ArchFLT|Receiver:inst1|bas_signal[1]~2           ; |ArchFLT|Receiver:inst1|bas_signal[1]~2           ; combout          ;
+; |ArchFLT|Receiver:inst1|bas_signal[0]~3           ; |ArchFLT|Receiver:inst1|bas_signal[0]~3           ; combout          ;
+; |ArchFLT|PK_Block:inst12|Mux0~0                   ; |ArchFLT|PK_Block:inst12|Mux0~0                   ; combout          ;
+; |ArchFLT|Splitter:inst|on_off~1                   ; |ArchFLT|Splitter:inst|on_off~1                   ; combout          ;
+; |ArchFLT|PK_Block:inst12|Mux1~0                   ; |ArchFLT|PK_Block:inst12|Mux1~0                   ; combout          ;
+; |ArchFLT|PK_Block:inst12|Mux3~0                   ; |ArchFLT|PK_Block:inst12|Mux3~0                   ; combout          ;
+; |ArchFLT|PK_Block:inst12|PowerOutD5_2~0           ; |ArchFLT|PK_Block:inst12|PowerOutD5_2~0           ; combout          ;
+; |ArchFLT|PK_Block:inst12|Mux2~0                   ; |ArchFLT|PK_Block:inst12|Mux2~0                   ; combout          ;
+; |ArchFLT|PK_Block:inst12|PowerOutC4_2~0           ; |ArchFLT|PK_Block:inst12|PowerOutC4_2~0           ; combout          ;
+; |ArchFLT|PK_Block:inst12|Mux0~1                   ; |ArchFLT|PK_Block:inst12|Mux0~1                   ; combout          ;
+; |ArchFLT|PK_Block:inst12|Mux1~1                   ; |ArchFLT|PK_Block:inst12|Mux1~1                   ; combout          ;
+; |ArchFLT|PK_Block:inst12|PowerOutB4_2~0           ; |ArchFLT|PK_Block:inst12|PowerOutB4_2~0           ; combout          ;
+; |ArchFLT|PK_Block:inst12|Mux0~2                   ; |ArchFLT|PK_Block:inst12|Mux0~2                   ; combout          ;
+; |ArchFLT|PK_Block:inst12|PowerOutB3_2~0           ; |ArchFLT|PK_Block:inst12|PowerOutB3_2~0           ; combout          ;
+; |ArchFLT|Transmitter:inst4|bas_signal[0]~3        ; |ArchFLT|Transmitter:inst4|bas_signal[0]~3        ; combout          ;
+; |ArchFLT|B3_2                                     ; |ArchFLT|B3_2                                     ; padio            ;
+; |ArchFLT|B4_2                                     ; |ArchFLT|B4_2                                     ; padio            ;
+; |ArchFLT|C4_2                                     ; |ArchFLT|C4_2                                     ; padio            ;
+; |ArchFLT|D5_2                                     ; |ArchFLT|D5_2                                     ; padio            ;
+; |ArchFLT|bas_data_TX                              ; |ArchFLT|bas_data_TX                              ; padio            ;
+; |ArchFLT|clk                                      ; |ArchFLT|clk~corein                               ; combout          ;
+; |ArchFLT|control_bit                              ; |ArchFLT|control_bit~corein                       ; combout          ;
+; |ArchFLT|data                                     ; |ArchFLT|data~corein                              ; combout          ;
+; |ArchFLT|clk~clkctrl                              ; |ArchFLT|clk~clkctrl                              ; outclk           ;
+; |ArchFLT|Transmitter:inst4|bas_data_TX~0clkctrl   ; |ArchFLT|Transmitter:inst4|bas_data_TX~0clkctrl   ; outclk           ;
+; |ArchFLT|Receiver:inst1|bas_words[13]~75DUPLICATE ; |ArchFLT|Receiver:inst1|bas_words[13]~75DUPLICATE ; combout          ;
+; |ArchFLT|Receiver:inst1|bas_words[13]~DUPLICATE   ; |ArchFLT|Receiver:inst1|bas_words[13]~DUPLICATE   ; regout           ;
++---------------------------------------------------+---------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                             ;
++-----------------------------------------+-----------------------------------------+------------------+
+; Node Name                               ; Output Port Name                        ; Output Port Type ;
++-----------------------------------------+-----------------------------------------+------------------+
+; |ArchFLT|PK_Block:inst12|PowerOutB3     ; |ArchFLT|PK_Block:inst12|PowerOutB3     ; regout           ;
+; |ArchFLT|PK_Block:inst12|PowerOutB4     ; |ArchFLT|PK_Block:inst12|PowerOutB4     ; regout           ;
+; |ArchFLT|PK_Block:inst12|PowerOutC4     ; |ArchFLT|PK_Block:inst12|PowerOutC4     ; regout           ;
+; |ArchFLT|PK_Block:inst12|PowerOutD5     ; |ArchFLT|PK_Block:inst12|PowerOutD5     ; regout           ;
+; |ArchFLT|KY_Block:inst11|KY1            ; |ArchFLT|KY_Block:inst11|KY1            ; regout           ;
+; |ArchFLT|KY_Block:inst11|KY3            ; |ArchFLT|KY_Block:inst11|KY3            ; regout           ;
+; |ArchFLT|KY_Block:inst11|KY7            ; |ArchFLT|KY_Block:inst11|KY7            ; regout           ;
+; |ArchFLT|KY_Block:inst11|KY2            ; |ArchFLT|KY_Block:inst11|KY2            ; regout           ;
+; |ArchFLT|Receiver:inst1|bas_words[11]   ; |ArchFLT|Receiver:inst1|bas_words[11]   ; regout           ;
+; |ArchFLT|Receiver:inst1|bas_words[3]    ; |ArchFLT|Receiver:inst1|bas_words[3]    ; regout           ;
+; |ArchFLT|Receiver:inst1|bas_words[1]    ; |ArchFLT|Receiver:inst1|bas_words[1]    ; regout           ;
+; |ArchFLT|Receiver:inst1|bas_words[2]    ; |ArchFLT|Receiver:inst1|bas_words[2]    ; regout           ;
+; |ArchFLT|RW_Block:inst2|en_TX~1         ; |ArchFLT|RW_Block:inst2|en_TX~1         ; combout          ;
+; |ArchFLT|Receiver:inst1|bas_words[2]~84 ; |ArchFLT|Receiver:inst1|bas_words[2]~84 ; combout          ;
+; |ArchFLT|KY_Block:inst11|KY2~0          ; |ArchFLT|KY_Block:inst11|KY2~0          ; combout          ;
+; |ArchFLT|KY_Block:inst11|KY2~1          ; |ArchFLT|KY_Block:inst11|KY2~1          ; combout          ;
+; |ArchFLT|KY_Block:inst11|KY1~0          ; |ArchFLT|KY_Block:inst11|KY1~0          ; combout          ;
+; |ArchFLT|KY_Block:inst11|KY7~0          ; |ArchFLT|KY_Block:inst11|KY7~0          ; combout          ;
+; |ArchFLT|KY_Block:inst11|KY3~0          ; |ArchFLT|KY_Block:inst11|KY3~0          ; combout          ;
+; |ArchFLT|KY_Block:inst11|KY1~1          ; |ArchFLT|KY_Block:inst11|KY1~1          ; combout          ;
+; |ArchFLT|PK_Block:inst12|PowerOutD5~0   ; |ArchFLT|PK_Block:inst12|PowerOutD5~0   ; combout          ;
+; |ArchFLT|PK_Block:inst12|PowerOutC4~0   ; |ArchFLT|PK_Block:inst12|PowerOutC4~0   ; combout          ;
+; |ArchFLT|PK_Block:inst12|PowerOutB4~0   ; |ArchFLT|PK_Block:inst12|PowerOutB4~0   ; combout          ;
+; |ArchFLT|PK_Block:inst12|PowerOutB3~2   ; |ArchFLT|PK_Block:inst12|PowerOutB3~2   ; combout          ;
+; |ArchFLT|B3                             ; |ArchFLT|B3                             ; padio            ;
+; |ArchFLT|B4                             ; |ArchFLT|B4                             ; padio            ;
+; |ArchFLT|C4                             ; |ArchFLT|C4                             ; padio            ;
+; |ArchFLT|D5                             ; |ArchFLT|D5                             ; padio            ;
+; |ArchFLT|KY1                            ; |ArchFLT|KY1                            ; padio            ;
+; |ArchFLT|KY3                            ; |ArchFLT|KY3                            ; padio            ;
+; |ArchFLT|KY7                            ; |ArchFLT|KY7                            ; padio            ;
+; |ArchFLT|KY2                            ; |ArchFLT|KY2                            ; padio            ;
+; |ArchFLT|reset                          ; |ArchFLT|reset~corein                   ; combout          ;
+; |ArchFLT|on_serviece                    ; |ArchFLT|on_serviece~corein             ; combout          ;
+; |ArchFLT|off_serviece                   ; |ArchFLT|off_serviece~corein            ; combout          ;
+; |ArchFLT|off_power_serviece             ; |ArchFLT|off_power_serviece~corein      ; combout          ;
+; |ArchFLT|reset~clkctrl                  ; |ArchFLT|reset~clkctrl                  ; outclk           ;
++-----------------------------------------+-----------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                             ;
++-----------------------------------------+-----------------------------------------+------------------+
+; Node Name                               ; Output Port Name                        ; Output Port Type ;
++-----------------------------------------+-----------------------------------------+------------------+
+; |ArchFLT|PK_Block:inst12|PowerOutB3     ; |ArchFLT|PK_Block:inst12|PowerOutB3     ; regout           ;
+; |ArchFLT|PK_Block:inst12|PowerOutB4     ; |ArchFLT|PK_Block:inst12|PowerOutB4     ; regout           ;
+; |ArchFLT|PK_Block:inst12|PowerOutC4     ; |ArchFLT|PK_Block:inst12|PowerOutC4     ; regout           ;
+; |ArchFLT|PK_Block:inst12|PowerOutD5     ; |ArchFLT|PK_Block:inst12|PowerOutD5     ; regout           ;
+; |ArchFLT|KY_Block:inst11|KY1            ; |ArchFLT|KY_Block:inst11|KY1            ; regout           ;
+; |ArchFLT|KY_Block:inst11|KY3            ; |ArchFLT|KY_Block:inst11|KY3            ; regout           ;
+; |ArchFLT|KY_Block:inst11|KY7            ; |ArchFLT|KY_Block:inst11|KY7            ; regout           ;
+; |ArchFLT|KY_Block:inst11|KY2            ; |ArchFLT|KY_Block:inst11|KY2            ; regout           ;
+; |ArchFLT|Receiver:inst1|bas_words[11]   ; |ArchFLT|Receiver:inst1|bas_words[11]   ; regout           ;
+; |ArchFLT|Receiver:inst1|bas_words[0]    ; |ArchFLT|Receiver:inst1|bas_words[0]    ; regout           ;
+; |ArchFLT|Receiver:inst1|bas_words[4]    ; |ArchFLT|Receiver:inst1|bas_words[4]    ; regout           ;
+; |ArchFLT|Receiver:inst1|bas_words[3]    ; |ArchFLT|Receiver:inst1|bas_words[3]    ; regout           ;
+; |ArchFLT|Receiver:inst1|bas_words[1]    ; |ArchFLT|Receiver:inst1|bas_words[1]    ; regout           ;
+; |ArchFLT|Receiver:inst1|bas_words[7]    ; |ArchFLT|Receiver:inst1|bas_words[7]    ; regout           ;
+; |ArchFLT|Receiver:inst1|bas_words[2]    ; |ArchFLT|Receiver:inst1|bas_words[2]    ; regout           ;
+; |ArchFLT|Receiver:inst1|bas_words[2]~84 ; |ArchFLT|Receiver:inst1|bas_words[2]~84 ; combout          ;
+; |ArchFLT|KY_Block:inst11|KY2~0          ; |ArchFLT|KY_Block:inst11|KY2~0          ; combout          ;
+; |ArchFLT|KY_Block:inst11|KY2~1          ; |ArchFLT|KY_Block:inst11|KY2~1          ; combout          ;
+; |ArchFLT|KY_Block:inst11|KY1~0          ; |ArchFLT|KY_Block:inst11|KY1~0          ; combout          ;
+; |ArchFLT|KY_Block:inst11|KY7~0          ; |ArchFLT|KY_Block:inst11|KY7~0          ; combout          ;
+; |ArchFLT|KY_Block:inst11|KY3~0          ; |ArchFLT|KY_Block:inst11|KY3~0          ; combout          ;
+; |ArchFLT|KY_Block:inst11|KY1~1          ; |ArchFLT|KY_Block:inst11|KY1~1          ; combout          ;
+; |ArchFLT|Splitter:inst|addr[0]~5        ; |ArchFLT|Splitter:inst|addr[0]~5        ; combout          ;
+; |ArchFLT|PK_Block:inst12|PowerOutB3~0   ; |ArchFLT|PK_Block:inst12|PowerOutB3~0   ; combout          ;
+; |ArchFLT|PK_Block:inst12|PowerOutB3~1   ; |ArchFLT|PK_Block:inst12|PowerOutB3~1   ; combout          ;
+; |ArchFLT|PK_Block:inst12|PowerOutD5~0   ; |ArchFLT|PK_Block:inst12|PowerOutD5~0   ; combout          ;
+; |ArchFLT|PK_Block:inst12|PowerOutC4~0   ; |ArchFLT|PK_Block:inst12|PowerOutC4~0   ; combout          ;
+; |ArchFLT|PK_Block:inst12|PowerOutB4~0   ; |ArchFLT|PK_Block:inst12|PowerOutB4~0   ; combout          ;
+; |ArchFLT|PK_Block:inst12|PowerOutB3~2   ; |ArchFLT|PK_Block:inst12|PowerOutB3~2   ; combout          ;
+; |ArchFLT|B3                             ; |ArchFLT|B3                             ; padio            ;
+; |ArchFLT|B4                             ; |ArchFLT|B4                             ; padio            ;
+; |ArchFLT|C4                             ; |ArchFLT|C4                             ; padio            ;
+; |ArchFLT|D5                             ; |ArchFLT|D5                             ; padio            ;
+; |ArchFLT|KY1                            ; |ArchFLT|KY1                            ; padio            ;
+; |ArchFLT|KY3                            ; |ArchFLT|KY3                            ; padio            ;
+; |ArchFLT|KY7                            ; |ArchFLT|KY7                            ; padio            ;
+; |ArchFLT|KY2                            ; |ArchFLT|KY2                            ; padio            ;
+; |ArchFLT|reset                          ; |ArchFLT|reset~corein                   ; combout          ;
+; |ArchFLT|off_serviece                   ; |ArchFLT|off_serviece~corein            ; combout          ;
+; |ArchFLT|off_power_serviece             ; |ArchFLT|off_power_serviece~corein      ; combout          ;
+; |ArchFLT|reset~clkctrl                  ; |ArchFLT|reset~clkctrl                  ; outclk           ;
++-----------------------------------------+-----------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Full Version
+    Info: Processing started: Thu Sep 07 14:13:32 2023
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off ArchFLT -c ArchFLT
+Info: Using vector source file "D:/QUARTUS projects/Project 4L2/FLT/version 4.0/ArchFLT.vwf"
+Warning: Compiler packed, optimized or synthesized away node "Splitter:inst". Ignored vector source file node.
+Warning: Compiler packed, optimized or synthesized away node "Receiver:inst1". Ignored vector source file node.
+Warning: Compiler packed, optimized or synthesized away node "RW_Block:inst2". Ignored vector source file node.
+Warning: Compiler packed, optimized or synthesized away node "DeMUX:inst3". Ignored vector source file node.
+Warning: Compiler packed, optimized or synthesized away node "Transmitter:inst4". Ignored vector source file node.
+Warning: Compiler packed, optimized or synthesized away node "KY_Block:inst11". Ignored vector source file node.
+Warning: Compiler packed, optimized or synthesized away node "PK_Block:inst12". Ignored vector source file node.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Splitter:inst|addr[4]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Splitter:inst|addr[3]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Splitter:inst|addr[2]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Splitter:inst|addr[1]" in design.
+Warning: Compiler packed, optimized or synthesized away node "Splitter:inst|addr[0]". Ignored vector source file node.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Splitter:inst|addr~0" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Splitter:inst|addr~1" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Splitter:inst|addr~2" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Splitter:inst|addr~3" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Splitter:inst|addr~4" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Splitter:inst|bas_data[7]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Splitter:inst|bas_data[6]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Splitter:inst|bas_data[5]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Splitter:inst|bas_data[4]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Splitter:inst|bas_data[3]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Splitter:inst|bas_data[2]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Splitter:inst|bas_data[1]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Splitter:inst|bas_data[0]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Splitter:inst|bas_data~0" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Splitter:inst|bas_data~1" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Splitter:inst|bas_data~2" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Splitter:inst|bas_data~3" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Splitter:inst|bas_data~4" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Splitter:inst|bas_data~5" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Splitter:inst|bas_data~6" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Splitter:inst|bas_data~7" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Splitter:inst|bas_words[15]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Splitter:inst|bas_words[14]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Splitter:inst|bas_words[13]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Splitter:inst|bas_words[12]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Splitter:inst|bas_words[11]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Splitter:inst|bas_words[10]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Splitter:inst|bas_words[9]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Splitter:inst|bas_words[8]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Splitter:inst|bas_words[7]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Splitter:inst|bas_words[6]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Splitter:inst|bas_words[5]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Splitter:inst|bas_words[4]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Splitter:inst|bas_words[3]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Splitter:inst|bas_words[2]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Splitter:inst|bas_words[1]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Splitter:inst|bas_words[0]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Splitter:inst|D4_bit" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Splitter:inst|D4_bit~0" in design.
+Warning: Compiler packed, optimized or synthesized away node "Splitter:inst|on_off". Ignored vector source file node.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Splitter:inst|on_off~0" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Splitter:inst|rd_wd" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Splitter:inst|rd_wd~0" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Splitter:inst|reset" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|Add0" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words[5]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words[0]~reg0" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words[1]~reg0" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words[2]~reg0" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words[3]~reg0" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words[4]~reg0" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words[5]~reg0" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words[6]~reg0" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words[7]~reg0" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words[8]~reg0" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words[9]~reg0" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words[10]~reg0" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words[11]~reg0" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words[12]~reg0" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words[13]~reg0" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words[14]~reg0" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words[15]~0" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words[15]~reg0" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words~1" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words~2" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words~3" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words~4" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words~5" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words~6" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words~7" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words~8" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words~9" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words~10" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words~11" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words~12" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words~13" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words~14" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words~15" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words~16" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words~17" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words~18" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words~19" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words~20" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words~21" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words~22" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words~23" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words~24" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words~25" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words~26" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words~27" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words~28" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words~29" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words~30" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words~31" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words~32" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words~33" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words~34" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words~35" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words~36" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words~37" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words~38" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words~39" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words~40" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words~41" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words~42" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words~43" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words~44" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words~45" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words~46" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words~47" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words~48" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words~49" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words~50" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words~51" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words~52" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words~53" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words~54" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words~55" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words~56" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words~57" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words~58" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words~59" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words~60" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words~61" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words~62" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words~63" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|bas_words~64" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|clk" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|control_bit" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|data" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|Decoder0" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|LessThan0" in design.
+Warning: Compiler packed, optimized or synthesized away node "Receiver:inst1|overclock". Ignored vector source file node.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|overclock~0" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Receiver:inst1|reset" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "RW_Block:inst2|en_MEM" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "RW_Block:inst2|en_MEM~0" in design.
+Warning: Compiler packed, optimized or synthesized away node "RW_Block:inst2|en_TX". Ignored vector source file node.
+Warning: Ignored node in vector source file. Can't find corresponding node name "RW_Block:inst2|en_TX~0" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "RW_Block:inst2|rd_wd" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "RW_Block:inst2|reset" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "DeMUX:inst3|D4_bit_in" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "DeMUX:inst3|en_KY" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "DeMUX:inst3|en_KY~0" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "DeMUX:inst3|en_KY~1" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "DeMUX:inst3|en_MEM" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "DeMUX:inst3|en_PK" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "DeMUX:inst3|en_PK~0" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "DeMUX:inst3|en_PK~1" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "DeMUX:inst3|reset" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Transmitter:inst4|Add0" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Transmitter:inst4|bas_data_TX~1" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Transmitter:inst4|bas_data_TX~2" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Transmitter:inst4|bas_data_TX~3" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Transmitter:inst4|bas_data_TX~reg0" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Transmitter:inst4|clk" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Transmitter:inst4|control_bit" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Transmitter:inst4|en_TX" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Transmitter:inst4|LessThan0" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Transmitter:inst4|Mux0" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Transmitter:inst4|off_power_serviece" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Transmitter:inst4|off_serviece" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Transmitter:inst4|on_serviece" in design.
+Warning: Compiler packed, optimized or synthesized away node "Transmitter:inst4|overclock". Ignored vector source file node.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Transmitter:inst4|overclock~0" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Transmitter:inst4|overclock~1" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Transmitter:inst4|reset" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "KY_Block:inst11|bas_data[7]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "KY_Block:inst11|bas_data[6]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "KY_Block:inst11|bas_data[5]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "KY_Block:inst11|bas_data[4]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "KY_Block:inst11|bas_data[3]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "KY_Block:inst11|bas_data[2]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "KY_Block:inst11|bas_data[1]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "KY_Block:inst11|bas_data[0]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "KY_Block:inst11|clk" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "KY_Block:inst11|en_KY" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "KY_Block:inst11|KY1~reg0" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "KY_Block:inst11|KY2~reg0" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "KY_Block:inst11|KY3~reg0" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "KY_Block:inst11|KY7~reg0" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "KY_Block:inst11|Mux0" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "KY_Block:inst11|Mux1" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "KY_Block:inst11|Mux2" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "KY_Block:inst11|Mux3" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "KY_Block:inst11|on_off" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "KY_Block:inst11|reset" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "KY_Block:inst11|sub_data[3]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "KY_Block:inst11|sub_data[2]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "KY_Block:inst11|sub_data[1]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "KY_Block:inst11|sub_data[0]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "PK_Block:inst12|bas_addr[4]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "PK_Block:inst12|bas_addr[3]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "PK_Block:inst12|bas_addr[2]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "PK_Block:inst12|bas_addr[1]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "PK_Block:inst12|bas_addr[0]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "PK_Block:inst12|bas_data[7]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "PK_Block:inst12|bas_data[6]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "PK_Block:inst12|bas_data[5]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "PK_Block:inst12|bas_data[4]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "PK_Block:inst12|bas_data[3]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "PK_Block:inst12|bas_data[2]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "PK_Block:inst12|bas_data[1]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "PK_Block:inst12|bas_data[0]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "PK_Block:inst12|clk" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "PK_Block:inst12|en_PK" in design.
+Warning: Compiler packed, optimized or synthesized away node "PK_Block:inst12|Mux0". Ignored vector source file node.
+Warning: Compiler packed, optimized or synthesized away node "PK_Block:inst12|Mux1". Ignored vector source file node.
+Warning: Compiler packed, optimized or synthesized away node "PK_Block:inst12|Mux2". Ignored vector source file node.
+Warning: Compiler packed, optimized or synthesized away node "PK_Block:inst12|Mux3". Ignored vector source file node.
+Warning: Ignored node in vector source file. Can't find corresponding node name "PK_Block:inst12|Mux4" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "PK_Block:inst12|Mux5" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "PK_Block:inst12|Mux6" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "PK_Block:inst12|Mux7" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "PK_Block:inst12|Mux8" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "PK_Block:inst12|Mux9" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "PK_Block:inst12|Mux10" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "PK_Block:inst12|Mux11" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "PK_Block:inst12|Mux12" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "PK_Block:inst12|Mux13" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "PK_Block:inst12|Mux14" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "PK_Block:inst12|Mux15" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "PK_Block:inst12|on_off" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "PK_Block:inst12|PowerOutB3_2~reg0" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "PK_Block:inst12|PowerOutB3~reg0" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "PK_Block:inst12|PowerOutB4_2~reg0" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "PK_Block:inst12|PowerOutB4~reg0" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "PK_Block:inst12|PowerOutC4_2~reg0" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "PK_Block:inst12|PowerOutC4~reg0" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "PK_Block:inst12|PowerOutD5_2~reg0" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "PK_Block:inst12|PowerOutD5~reg0" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "PK_Block:inst12|reset" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "PK_Block:inst12|sub_addr[4]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "PK_Block:inst12|sub_addr[3]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "PK_Block:inst12|sub_addr[2]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "PK_Block:inst12|sub_addr[1]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "PK_Block:inst12|sub_addr[0]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "PK_Block:inst12|sub_data[7]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "PK_Block:inst12|sub_data[6]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "PK_Block:inst12|sub_data[5]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "PK_Block:inst12|sub_data[4]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "PK_Block:inst12|sub_data[3]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "PK_Block:inst12|sub_data[2]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "PK_Block:inst12|sub_data[1]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "PK_Block:inst12|sub_data[0]" in design.
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      63.25 %
+Info: Number of transitions in simulation is 2698
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 257 warnings
+    Info: Peak virtual memory: 4327 megabytes
+    Info: Processing ended: Thu Sep 07 14:13:32 2023
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

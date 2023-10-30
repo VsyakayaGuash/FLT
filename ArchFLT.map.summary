@@ -1,0 +1,15 @@
+Analysis & Synthesis Status : Successful - Thu Sep 07 14:13:16 2023
+Quartus II 64-Bit Version : 9.0 Build 235 06/17/2009 SP 2 SJ Full Version
+Revision Name : ArchFLT
+Top-level Entity Name : ArchFLT
+Family : Stratix II
+Logic utilization : N/A
+    Combinational ALUTs : 56
+    Dedicated logic registers : 36
+Total registers : 36
+Total pins : 20
+Total virtual pins : 0
+Total block memory bits : 0
+DSP block 9-bit elements : 0
+Total PLLs : 0
+Total DLLs : 0
